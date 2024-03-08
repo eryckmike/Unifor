@@ -10,6 +10,7 @@ D --> E{{media}}
 E --> F([Fim])
 ```  
 #### Pseudocódigo
+```
 1 ALGORITIMO CalMedia
 2 DECLARE N1, N2, N3, N4
 				 media
@@ -19,7 +20,7 @@ E --> F([Fim])
 6 media → (N1 + N2 + N3 + N4) /4
 7 ESCREVA media
 8 FIM
-
+```
 ### 2 - Celsius para Fahrenheit
 ```mermaid
 flowchart TD
