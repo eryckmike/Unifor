@@ -13,7 +13,7 @@ E --> F([Fim])
 ```
 1 ALGORITIMO CalMedia
 2 DECLARE N1, N2, N3, N4
-				 media
+	  media
 3 INICIO
 4 ESCREVA Digite as notas:
 5 LEIA N1, N2, N3, N4
