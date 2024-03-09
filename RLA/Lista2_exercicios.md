@@ -13,7 +13,7 @@ E --> F([Fim])
 ```
 1 ALGORITIMO CalMedia
 2 DECLARE N1, N2, N3, N4
-				 media
+	  media
 3 INICIO
 4 ESCREVA Digite as notas:
 5 LEIA N1, N2, N3, N4
@@ -32,15 +32,15 @@ E --> F([Fim])
 ```
 #### Pseudocódigo
 ```
-1	ALGORITIMO CelsiusFahrenheit
-2	DECLARE celsius
-					  fahrenheit
+1  ALGORITIMO CelsiusFahrenheit
+2  DECLARE celsius
+		fahrenheit
 3  INICIO
 4  ESCREVA Digite a temperatura em celsius(C):
-5 	LEIA celsius
-6 	fahrenheit → celsius * 1.8 + 32
-7 	ESCREVA fahrenheit
-8 	FIM
+5  LEIA celsius
+6  fahrenheit → celsius * 1.8 + 32
+7  ESCREVA fahrenheit
+8  FIM
 ```
 ### 3 - Polegadas para Milímetros
 ```mermaid
@@ -53,15 +53,15 @@ E --> F([Fim])
 ```
 #### Pseudocódigo
 ```
-1	 ALGORITIMO PolgMilm
-2 	DECLARE poleg
-					  resultado
+1   ALGORITIMO PolgMilm
+2   DECLARE poleg
+ 	    resultado
 3   INICIO
-4	ESCREVA Digite a quantidade de chuva em Polegadas:
-5 	LEIA poleg
-6 	resultado → poleg * 25.4
-7 	ESCREVA resultado
-8	FIM
+4   ESCREVA Digite a quantidade de chuva em Polegadas:
+5   LEIA poleg
+6   resultado → poleg * 25.4
+7   ESCREVA resultado
+8   FIM
 ```
 ### 4 - Custo de um carro
 ```mermaid
@@ -78,23 +78,23 @@ I --> J([fim])
 ```
 #### Pseudocódigo
 ```
-1 ALGORITIMO CustoCarro
-2 DECLARE valorcarro
-					  porcentdistribuidor
-					  porcentimposto
-					  valor1
-					  valor2
-					  resultado
-3 	     INICIO
-4 	     ESCREVA Digite o valor do carro (sem taxas):
-5	     LEIA valorcarro
-6       porcentdistribuidor → 0.12
-7	     porcentimposto → 0.45
-8 		 valor1 → valorcarro * porcentimposto
-9 		  valor2 → valorcarro * porcentdistribuidor
-10	 resultado → valorcarro + valor1 + valor2
-11    ESCREVA resultado
-12    FIM
+1  ALGORITIMO CustoCarro
+2  DECLARE valorcarro
+	   porcentdistribuidor
+	   porcentimposto
+	   valor1
+           valor2
+           resultado
+3  INICIO
+4  ESCREVA Digite o valor do carro (sem taxas):
+5  LEIA valorcarro
+6  porcentdistribuidor → 0.12
+7  porcentimposto → 0.45
+8  valor1 → valorcarro * porcentimposto
+9  valor2 → valorcarro * porcentdistribuidor
+10 resultado → valorcarro + valor1 + valor2
+11 ESCREVA resultado
+12 FIM
 ```
 ### 5 - Número ao quadrado
 ```mermaid 
