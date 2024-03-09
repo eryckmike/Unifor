@@ -13,7 +13,7 @@ E --> F([Fim])
 ```
 1 ALGORITIMO CalMedia
 2 DECLARE N1, N2, N3, N4
-	  media
+				 media
 3 INICIO
 4 ESCREVA Digite as notas:
 5 LEIA N1, N2, N3, N4
@@ -31,6 +31,7 @@ D --> E{{fahrenheit}}
 E --> F([Fim])
 ```
 #### Pseudocódigo
+```
 1	ALGORITIMO CelsiusFahrenheit
 2	DECLARE celsius
 					  fahrenheit
@@ -40,7 +41,7 @@ E --> F([Fim])
 6 	fahrenheit → celsius * 1.8 + 32
 7 	ESCREVA fahrenheit
 8 	FIM
-
+```
 ### 3 - Polegadas para Milímetros
 ```mermaid
 flowchart TD 
@@ -51,16 +52,17 @@ D --> E{{resultado}}
 E --> F([Fim])
 ```
 #### Pseudocódigo
+```
 1	 ALGORITIMO PolgMilm
 2 	DECLARE poleg
 					  resultado
-3	 INICIO
-4	 ESCREVA Digite a quantidade de chuva em Polegadas:
+3   INICIO
+4	ESCREVA Digite a quantidade de chuva em Polegadas:
 5 	LEIA poleg
 6 	resultado → poleg * 25.4
 7 	ESCREVA resultado
-8	 FIM
-
+8	FIM
+```
 ### 4 - Custo de um carro
 ```mermaid
 flowchart TD
@@ -75,6 +77,7 @@ H --> I{{resultado}}
 I --> J([fim])
 ```
 #### Pseudocódigo
+```
 1 ALGORITIMO CustoCarro
 2 DECLARE valorcarro
 					  porcentdistribuidor
@@ -92,7 +95,7 @@ I --> J([fim])
 10	 resultado → valorcarro + valor1 + valor2
 11    ESCREVA resultado
 12    FIM
-
+```
 ### 5 - Número ao quadrado
 ```mermaid 
 flowchart TD
@@ -103,6 +106,7 @@ D --> E{{resultado}}
 E --> F([Fim])
 ```
 #### Pseudocódigo
+``
 1	 ALGORITIMO NumQuad
 2 	DECLARE N1
 					  resultado
@@ -196,28 +200,61 @@ J --> K([Fim])
 ### 8 - Calculo da média do aluno na disciplina RLA
 ```mermaid 
 flowchart TD
-A([INICIO]) --> B{{Digite o nome do aluno}}
+A([INICIO]) --> B{{Digite o nome do aluno:}}
 B --> C[/nome/]
-C --> D{{Digite as notas}}
+C --> D{{Digite as notas:}}
 D --> E[/N1, N2/]
 E --> F["media = (N1*2 + N2*1) /3"]
 F --> G{{media}}
 G --> H([Fim])
 ```
-
+#### Pseudocódigo
+```
+1  ALGORITIMO CalMedia
+2  DECLARE nome
+		   N1, N2
+		   media
+3  INICIO
+4  ESCREVA Digite o nome do aluno:
+5  LEIA nome
+6  ESCREVA Digite as notas:
+7  LEIA N1, N2
+8  media → (N1*2 + N2*1) /3
+9  ESCREVA media
+10 FIM
+```
 ### 9 - Ficha do usuário
 ```mermaid 
 flowchart TD
-A([INICIO]) --> B{{Digite o nome do aluno}}
+A([INICIO]) --> B{{Digite o nome do aluno:}}
 B --> C[/nome/]
-C --> D{{Digite o numero da matrícula}}
+C --> D{{Digite o numero da matrícula:}}
 D --> E[/nummatricula/]
-E --> F{{Digite a idade}}
+E --> F{{Digite a idade:}}
 F --> G[/idade/]
-G --> H{{Digite o e-mail}}
+G --> H{{Digite o e-mail:}}
 H --> J[/email/]
 J --> K{{"'Nome: ' + nome 'Matrícula: ' + nummatricula 'Idade: ' + idade 'E-mail:' + email"}}
 K --> L([Fim])
+```
+#### Pseudocódigo
+```
+1  ALGORITIMO FichaUsuario
+2  DECLARE nome
+		   nummatricula
+		   idade
+		   email
+3  INICIO
+4  ESCREVA Digite o nome do aluno:
+5  LEIA nome
+6  ESCREVA Digite o numero da matrícula:  media → (N1*2 + N2*1) /3
+7  LEIA nummatricula
+8  ESCREVA Digite a idade:
+9  LEIA idade
+10 ESCREVA Digite o e-mail:
+11 LEIA email
+12 ESCREVA "Nome: " + nome "Matrícula: " + nummatricula "Idade: " + idade "E-mai: " + email
+13 FIM
 ```
 ### 10 - 
 ### 20 - Calculadora
