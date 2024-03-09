@@ -34,7 +34,7 @@ E --> F([Fim])
 ```
 1  ALGORITIMO CelsiusFahrenheit
 2  DECLARE celsius
-		fahrenheit
+	   fahrenheit
 3  INICIO
 4  ESCREVA Digite a temperatura em celsius(C):
 5  LEIA celsius
