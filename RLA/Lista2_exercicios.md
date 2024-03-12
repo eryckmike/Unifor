@@ -1,4 +1,4 @@
-## Unifor - RLA
+# Unifor - RLA
 ## lista de exercícios
 ### 1 - Calculo de média
 ```mermaid
