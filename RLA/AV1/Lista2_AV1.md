@@ -12,7 +12,7 @@ E --> F([Fim])
 #### Pseudocódigo
 ```
 1 ALGORITIMO CalMedia
-2 DECLARE N1, N2, N3, N4
+2 DECLARE N1, N2, N3, N4 : INTEIRO
 		  media
 3 INICIO
 4 ESCREVA Digite as notas:
@@ -40,8 +40,8 @@ E --> F([Fim])
 #### Pseudocódigo
 ```
 1	ALGORITIMO CelsiusFahrenheit
-2	DECLARE celsius
-			fahrenheit
+2	DECLARE celsius :INTEIRO
+		fahrenheit
 3   INICIO
 4   ESCREVA Digite a temperatura em celsius(C):
 5 	LEIA celsius
@@ -84,8 +84,7 @@ Z --> ZZ([Fim])
 #### Pseudocódigo
 ```
 1	ALGORITIMO CalculadoraSimples
-2	DECLARE n1
-			n2
+2	DECLARE n1, n2 :INTEIRO
 			operador
 			resultado
 3   INICIO
