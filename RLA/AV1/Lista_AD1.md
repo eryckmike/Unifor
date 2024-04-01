@@ -4,11 +4,11 @@
 **Disciplina:** Raciocínio Lógico Algoritmico<br>
 **Código/Turma:** T160-80 <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** 30/03/2024 <br>
+**Data:** 21/03/2024 <br>
 **Aluno(a):** Eryck Mike Silva <br>
 **Matrícula:** 2413748 <br>
 
-**1a chamada (Sim/Não):** Nao<br>
+**1a chamada (Sim/Não):** Não<br>
 **2a chamada (Sim/Não):** Sim
 
 # Avaliação Diagnóstica 1
@@ -57,31 +57,30 @@ Dadas duas variáveis, $a$ e $b$, implemente e teste um algoritmo para trocar os
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite o primeiro número:}}
+A([INICIO]) --> B{{Digite o valor da a: }}
 B --> C[\a\]
-C --> D{{Digite o segundo número:}}
+C --> D{{Digite o valor da b: }}
 D --> E[\b\]
-E --> F[prim = a]
+E --> F[aux = a]
 F --> G[a = b]
-G --> H[b = prim]
-H --> I{{"a = (a)"}}
-I --> J{{"b = (b)"}}
-J --> Z([FIM])
+G --> H[b = aux]
+H --> I{{"a =", a}}
+I --> J{{"b =", b}}
 ```
 
 #### Pseudocódigo (1 ponto)
 
 ```
 1	Algoritmo TrocaValores
-2	DECLARE a, b, orim: INTEIRO
+2	DECLARE a, b, aux: INTEIRO
 3	INICIO
-4	ESCREVA "Digite o primeiro número:"
+4	ESCREVA "Digite o valor da a: "
 5	LEIA a
-6	ESCREVA "Digite o segundo número:"
+6	ESCREVA "Digite o valor da b: "
 7	LEIA b
-8	prim <- a
+8	aux <- a
 9	a <- b
-10	b <- prim
+10	b <- aux
 11	ESCREVA "a =", a
 12	ESCREVA "b =", b
 13	FIM
@@ -89,10 +88,10 @@ J --> Z([FIM])
 
 #### Teste de mesa
 
-| a | b | prim | a | b | saída 1 | saída 2 | 
-|--- |--- |--- |---  |--- |--- |--- | 
-| 3 | 4 | 3 | 4 | 3 | a = 4 | b = 3 |
-| 3 | 4 | 3 | 4 | 3 | a = 4 | b = 3 |
+| a  | b  | aux | a  | b  | saída 1 | saída 2 | 
+| -- | -- | --  | -- | -- | --      | --      | 
+| 0  | 1  | 0   | 1  | 0  | a = 1   | b = 0   |
+| 3  | 4  | 3   | 4  | 3  | a = 4   | b = 3   |
 
 ### Questão 2 - Contagem (1 ponto)
 
