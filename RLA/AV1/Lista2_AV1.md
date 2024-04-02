@@ -17,7 +17,7 @@ E --> F([Fim])
 3 INICIO
 4 ESCREVA Digite as notas:
 5 LEIA N1, N2, N3, N4
-6 media ← (N1 + N2 + N3 + N4) /4
+6 media ← (N1 + N2 + N3 + N4) /4	//calcula a media
 7 ESCREVA media
 8 FIM_CalMedia
 ```
@@ -33,7 +33,7 @@ E --> F([Fim])
 flowchart TD
 A([INICIO]) --> B{{"Digite a temperatura em Celsius(C):"}}
 B --> C[/celsius/]
-C --> D[fahrenheit = celsius * 1.8 + 32]
+C --> D[fahrenheit = celsius * 1.8 + 32]	
 D --> E{{fahrenheit}}
 E --> F([Fim])
 ```
@@ -45,7 +45,7 @@ E --> F([Fim])
 3   INICIO
 4   ESCREVA Digite a temperatura em celsius(C):
 5 	LEIA celsius
-6 	fahrenheit ← celsius * 1.8 + 32
+6 	fahrenheit ← celsius * 1.8 + 32			//calcula fahrenheit
 7 	ESCREVA fahrenheit
 8 	FIM_CelsiusFahrenheit
 ```
@@ -65,7 +65,7 @@ C --> D{{"Escolha um operador: (+,-,*,/) "}}
 D --> E[/operador/]
 E --> F{{digite o segundo número:}}
 F --> G[/n2/]
-G --> H{"operador === +"}
+G --> H{"operador === +"} 						
 G --> I{"operador === -"}
 G --> J{"operador === *"}
 G --> K{"operador === /"}
@@ -94,14 +94,14 @@ Z --> ZZ([Fim])
 7 	LEIA operador
 8 	ESCREVA digite o segundo número:
 9 	LEIA n2 
-10 	SE operador === + ENTAO
-11		resultado = n1 + n2
-12		SE SENAO operador === - ENTAO
-13			resultado = n1 - n2
-14				SE SENAO operador === * ENTAO
-15					resultado = n1 * n2
-16 						SE SENAO operador === / entao
-17							resultado = n1 / n2
+10 	SE operador === + ENTAO									//verifica o operador para realizar o calculo
+11		resultado = n1 + n2									//calcula a soma
+12		SE SENAO operador === - ENTAO						//verifica o operador para realizar o calculo
+13			resultado = n1 - n2								//calcula a subtração
+14				SE SENAO operador === * ENTAO				//verifica o operador para realizar o calculo		
+15					resultado = n1 * n2						//calcula a multiplicação
+16 						SE SENAO operador === / entao		//verifica o operador para realizar o calculo
+17							resultado = n1 / n2				//calcula a divisão
 18	ESCREVA resultado
 19	FIM_CalculadoraSimples
 ```
@@ -143,15 +143,15 @@ M --> Z
 3   INICIO
 4   ESCREVA Digite a idade:
 5	LEIA idade
-6	SE idade >= 5 or idade <= 7 ENTAO
+6	SE idade >= 5 or idade <= 7 ENTAO						//verifica se a idade é maior ou igual a 5 ou menor ou igual a 7
 7 		ESCREVA Infantil A
-8 		SE SENAO idade >= 8 or idade <= 10 ENTAO
+8 		SE SENAO idade >= 8 or idade <= 10 ENTAO			//verifica se a idade é maior ou igual a 8 ou menor ou igual a 10
 9 			ESCREVA Infantil B
-10 			SE SENAO idade >= 11 or idade <= 13 ENTAO
+10 			SE SENAO idade >= 11 or idade <= 13 ENTAO		//verifica se a idade é maior ou igual a 11 ou menor ou igual a 13
 11				ESCREVA Juvenil A
-12				SE SENAO idade >= 14 or idade <= 17 ENTAO
+12				SE SENAO idade >= 14 or idade <= 17 ENTAO	//verifica se a idade é maior ou igual a 14 ou menor ou igual a 17
 13					ESCREVA Juvenil B
-14					SE SENAO idade >= 18 ENTAO
+14					SE SENAO idade >= 18 ENTAO				//verifica se a idade é maior ou iguao a 18
 15						ESCREVA Adulto
 16 					SENAO 
 17					ESCREVA Inválido 
