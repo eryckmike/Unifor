@@ -78,9 +78,9 @@ I --> J{{"b =", b}}
 5	LEIA a
 6	ESCREVA "Digite o valor da b: "
 7	LEIA b
-8	aux <- a
-9	a <- b
-10	b <- aux
+8	aux <- a			//acrescenta o valor de a em aux
+9	a <- b				//acrescenta o valor de b em a
+10	b <- aux			//acrescenta o valor de aux em b
 11	ESCREVA "a =", a
 12	ESCREVA "b =", b
 13	FIM
@@ -116,7 +116,7 @@ A([INICIO]) --> B{{Digite o número de alunos: }}
 B --> C[\n\]
 C --> D[\cont = 0\]
 D --> E[\i = 1\]
-E --> F{i <= n}
+E --> F{i <= n}												
 F --FALSE--> W{{Número de alunos aprovados: cont}}
 W --> Z([FIM])
 F --TRUE--> G{{Digite a nota do aluno, i}}
@@ -157,14 +157,14 @@ J --LOOP--> E
 5	LEIA n
 6	cont <- 0
 7	i <- 1
-8	ENQUANTO i <= n FAÇA
+8	ENQUANTO i <= n FAÇA						//cria um laço enquanto i for menor ou igual a n
 9		ESCREVA "Digite a nota do aluno", i
 10		LEIA nota
-11		SE nota >= 50 && nota <= 100 ENTAO
-12			cont <- cont + 1
-13			i <- i + 1
-14		SENAO
-15			i <- i + 1
+11		SE nota >= 50 && nota <= 100 ENTAO		//verifica se a nota é maior ou igual a 50 e se é menor ou igual a 100
+12			cont <- cont + 1					//acrescenta um digito a mais na contagem
+13			i <- i + 1							//acrescenta um digito a mais na lista
+14		SENAO									//condição negativa
+15			i <- i + 1							//acrescenta um digito a mais na lista
 16	FIM_ENQUANTO
 17	ESCREVA "Número de alunos aprovados: cont"
 18	FIM_ALGORITMO
@@ -232,10 +232,10 @@ K --LOOP--> G
 3	INICIO
 4	ESCREVA "Digite a quantidade de números:"
 5	LEIA n
-6	SE n >= 0 ENTAO
+6	SE n >= 0 ENTAO											//verifica se n é maior ou igual a 0
 7		soma <- 0
 8		i <- 1
-9		ENQUANTO i <= n FAÇA
+9		ENQUANTO i <= n FAÇA								//cria um laço condicional enquanto o i for menor ou igual a n
 10			ESCREVA "Digite um número: "
 11			LEIA num
 12			soma <- soma + num
@@ -302,10 +302,10 @@ I --LOOP--> E
 4	ESCREVA "Digite o número de termos da série S: "
 5	LEIA n
 6	S <- 0
-7	PARA i DE 1 ATÉ n PASSO 1 FAÇA
-8		numerador <- 2 * i + 1
+7	PARA i DE 1 ATÉ n PASSO 1 FAÇA									//cria um laço condicional ate i chegar a n
+8		numerador <- 2 * i + 1							
 9		denominador <- 2 * i + 2
-10		termo <- numerador / denominador
+10		termo <- numerador / denominador							
 11		S <- S + termo
 12	FIM_PARA
 13	ESCREVA "Soma da série S é ", S
@@ -359,13 +359,13 @@ H --> I
 3	INICIO
 4	ESCREVA "Digite um numero inteiro nao-negativo:"
 5	LEIA n
-6	SE n >= 0 ENTAO
+6	SE n >= 0 ENTAO											//verifica se o n é maior ou igual a 0
 7		fator <- 1
-8		PARA i DE 1 ATÉ n PASSO 1 FAÇA
+8		PARA i DE 1 ATÉ n PASSO 1 FAÇA						//cria laço condicional do i ate chegar em n 
 9			fator <- fator * i
 10		FIM_PARA
 11		ESCREVA "O fatorial de, n, é: ", fator
-12	SENAO
+12	SENAO													//condição negativa
 13		ESCREVA "O valor deve ser maior ou igual a zero!"
 14	FIM_SE
 15	FIM_ALGORITMO
@@ -418,17 +418,17 @@ I --LOOP--> E
 3	INICIO
 4	ESCREVA "Digite o número de termos da série Fibonacci: "
 5	LEIA n
-6	SE n >= 0 ENTAO
+6	SE n >= 0 ENTAO												//verifica se n é maior ou igual a 0
 7		a <- 0
 8		b <- 0
-9		PARA i DE 1 ATÉ n PASSO 1 FAÇA
+9		PARA i DE 1 ATÉ n PASSO 1 FAÇA							//cria laço condicional de i ate chegar em n 
 10			ESCREVA a
 11			termo_atual <- a + b
 12			a <- b
 13			b <- termo_atual
 14			i <- i + 1
 15		FIM_PARA
-16	SENAO
+16	SENAO														//condição negativa
 17		ESCREVA "O valor deve ser maior que zero!"
 18	FIM_ALGORITMO
 ```
@@ -484,15 +484,15 @@ E --> W
 3	INICIO
 4	ESCREVA "Digite um número inteiro: "
 5	LEIA num
-6	SE num >= 0 ENTAO
+6	SE num >= 0 ENTAO									//verifica se num é maior ou igual a 0
 7		num_inv <- 0
-8		ENQUANTO num > 0 FAÇA
+8		ENQUANTO num > 0 FAÇA							//cria laço condicinal enquanto num for maior que 0
 9			digito <- num % 10
 10			num_inv <- num_inv * 10 + digito
 11			numero <- numero // 10
 12		FIM_ENQUANTO
 13		ESCREVA "Número invertido:", numero_inv
-14	SENAO
+14	SENAO												//condição negativa
 15		ESCREVA O número deve ser positivo!
 16	FIM_SE
 17	FIM_ALGORITMO
