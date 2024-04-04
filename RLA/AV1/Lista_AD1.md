@@ -74,13 +74,13 @@ I --> J{{"b =", b}}
 1	Algoritmo TrocaValores
 2	DECLARE a, b, aux: INTEIRO
 3	INICIO
-4	ESCREVA "Digite o valor da a: "
+4	ESCREVA "Digite o valor da a: "                             //solicita o valor de a
 5	LEIA a
-6	ESCREVA "Digite o valor da b: "
+6	ESCREVA "Digite o valor da b: "                             //solicita o valor de b
 7	LEIA b
-8	aux <- a			//acrescenta o valor de a em aux
-9	a <- b				//acrescenta o valor de b em a
-10	b <- aux			//acrescenta o valor de aux em b
+8	aux <- a		                                           	//acrescenta o valor de a em aux
+9	a <- b			                                        	//acrescenta o valor de b em a
+10	b <- aux		                                        	//acrescenta o valor de aux em b
 11	ESCREVA "a =", a
 12	ESCREVA "b =", b
 13	FIM
@@ -153,12 +153,12 @@ J --LOOP--> E
 1	Algoritmo ContaAprovacoes
 2	DECLARE n, cont, i: INTEIRO, nota: REAL
 3	INICIO
-4	ESCREVA "Digite o número de alunos: "
-5	LEIA n
-6	cont <- 0
-7	i <- 1
+4	ESCREVA "Digite o número de alunos: "       //solicita o numero de alunos
+5	LEIA n   
+6	cont <- 0                                   //inicia contagem como 0
+7	i <- 1                                      //estrutura inicial igual a 1
 8	ENQUANTO i <= n FAÇA						//cria um laço enquanto i for menor ou igual a n
-9		ESCREVA "Digite a nota do aluno", i
+9		ESCREVA "Digite a nota do aluno", i     //solicita o numero de alunos
 10		LEIA nota
 11		SE nota >= 50 && nota <= 100 ENTAO		//verifica se a nota é maior ou igual a 50 e se é menor ou igual a 100
 12			cont <- cont + 1					//acrescenta um digito a mais na contagem
@@ -230,20 +230,20 @@ K --LOOP--> G
 1	Algoritmo SomaNumeros
 2	DECLARE n, i: INTEIRO, soma, num: REAL
 3	INICIO
-4	ESCREVA "Digite a quantidade de números:"
+4	ESCREVA "Digite a quantidade de números:"               //solicita a quantidade de numeros
 5	LEIA n
 6	SE n >= 0 ENTAO											//verifica se n é maior ou igual a 0
-7		soma <- 0
-8		i <- 1
+7		soma <- 0                                           //inicia a soma como 0
+8		i <- 1                                              //inicia a estrutura inicial como 1
 9		ENQUANTO i <= n FAÇA								//cria um laço condicional enquanto o i for menor ou igual a n
-10			ESCREVA "Digite um número: "
+10			ESCREVA "Digite um número: "                    //solicita os numeros da sequencia
 11			LEIA num
-12			soma <- soma + num
-13			i <- i + 1
+12			soma <- soma + num                              //soma o resultado anterior da var soma com o numero digitado
+13			i <- i + 1                                      //acrescenta mais um valor a estrutura inicial
 14		FIM_ENQUANTO
-15		ESCREVA "A soma dos numeros é " , soma
-16	SENAO
-17		ESCREVA "O valor deve ser maior ou igual a zero!"
+15		ESCREVA "A soma dos numeros é " , soma    
+16	SENAO                                                   //caso negativo
+17		ESCREVA "O valor deve ser maior ou igual a zero!"    
 18	FIM_SE
 19	FIM_ALGOTITMO
 ```
@@ -299,14 +299,14 @@ I --LOOP--> E
 1	Algoritmo SomaSerie
 2	DECLARE n, S, i, numerador, denominador: INTEIRO, termo: REAL
 3	INICIO
-4	ESCREVA "Digite o número de termos da série S: "
-5	LEIA n
-6	S <- 0
-7	PARA i DE 1 ATÉ n PASSO 1 FAÇA									//cria um laço condicional ate i chegar a n
-8		numerador <- 2 * i + 1							
-9		denominador <- 2 * i + 2
-10		termo <- numerador / denominador							
-11		S <- S + termo
+4	ESCREVA "Digite o número de termos da série S: "                //solicita o numero de termos
+5	LEIA n    
+6	S <- 0                                                          //inicia S como 0
+7	PARA i de 0 ATÉ n-1 PASSO 1 FAÇA								//cria um laço condicional ate i chegar a n
+8		numerador <- 2 * i + 1							            //calcula o numerador 
+9		denominador <- 2 * i + 2                                    //calcula denominador
+10		termo <- numerador / denominador							//divide para chegar ao termo
+11		S <- S + termo                                              //acrescenta o numero de serie ao termo
 12	FIM_PARA
 13	ESCREVA "Soma da série S é ", S
 14	FIM_ALGORITMO
@@ -357,12 +357,12 @@ H --> I
 1	Algoritmo CalcFatorial
 2	DECLARE n, i, fator: INTEIRO
 3	INICIO
-4	ESCREVA "Digite um numero inteiro nao-negativo:"
+4	ESCREVA "Digite um numero inteiro nao-negativo:"        //solicita um numero nao-negativo
 5	LEIA n
 6	SE n >= 0 ENTAO											//verifica se o n é maior ou igual a 0
-7		fator <- 1
+7		fator <- 1                                          //fator inicia como 1
 8		PARA i DE 1 ATÉ n PASSO 1 FAÇA						//cria laço condicional do i ate chegar em n 
-9			fator <- fator * i
+9			fator <- fator * i                              //acrescenta um ao fator
 10		FIM_PARA
 11		ESCREVA "O fatorial de, n, é: ", fator
 12	SENAO													//condição negativa
@@ -416,17 +416,17 @@ I --LOOP--> E
 1	Algoritmo GeraFibonacci
 2	DECLARE n, a, b, i, termo_atual: INTEIRO
 3	INICIO
-4	ESCREVA "Digite o número de termos da série Fibonacci: "
+4	ESCREVA "Digite o número de termos da série Fibonacci: "    //solicita o numero de termos
 5	LEIA n
 6	SE n >= 0 ENTAO												//verifica se n é maior ou igual a 0
-7		a <- 0
-8		b <- 0
+7		a <- 0                                                  //a inicia como 0
+8		b <- 0                                                  //b inicia como 0
 9		PARA i DE 1 ATÉ n PASSO 1 FAÇA							//cria laço condicional de i ate chegar em n 
-10			ESCREVA a
-11			termo_atual <- a + b
-12			a <- b
-13			b <- termo_atual
-14			i <- i + 1
+10			ESCREVA a                
+11			termo_atual <- a + b                                //calcula o termo
+12			a <- b                                              //transforma o valor de a para b
+13			b <- termo_atual                                    //transforma o valor de b para termo_atual
+14			i <- i + 1                                          //acrescenta um digito a estrutura inicial
 15		FIM_PARA
 16	SENAO														//condição negativa
 17		ESCREVA "O valor deve ser maior que zero!"
@@ -481,16 +481,16 @@ E --> W
 ```
 1	Algoritmo InverteInteiro
 2	DECLARE num, num_inv, digito, numero: INTEIRO
-3	INICIO
-4	ESCREVA "Digite um número inteiro: "
-5	LEIA num
+3	INICIO    
+4	ESCREVA "Digite um número inteiro: "                //solicita um numero
+5	LEIA num    
 6	SE num >= 0 ENTAO									//verifica se num é maior ou igual a 0
-7		num_inv <- 0
+7		num_inv <- 0                                    //inicia num_inv como 0
 8		ENQUANTO num > 0 FAÇA							//cria laço condicinal enquanto num for maior que 0
-9			digito <- num % 10
-10			num_inv <- num_inv * 10 + digito
-11			numero <- numero // 10
-12		FIM_ENQUANTO
+9			digito <- num % 10                          //calcula digito 
+10			num_inv <- num_inv * 10 + digito            //calcula num_inv
+11			numero <- numero // 10                      //calcula numero
+12		FIM_ENQUANTO    
 13		ESCREVA "Número invertido:", numero_inv
 14	SENAO												//condição negativa
 15		ESCREVA O número deve ser positivo!
