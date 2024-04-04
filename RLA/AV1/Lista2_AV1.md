@@ -15,7 +15,7 @@ E --> F([Fim])
 2 DECLARE N1, N2, N3, N4 : INTEIRO
 		  media
 3 INICIO
-4 ESCREVA Digite as notas:
+4 ESCREVA Digite as notas:		//solicita as notas
 5 LEIA N1, N2, N3, N4
 6 media ← (N1 + N2 + N3 + N4) /4	//calcula a media
 7 ESCREVA media
@@ -33,7 +33,7 @@ E --> F([Fim])
 flowchart TD
 A([INICIO]) --> B{{"Digite a temperatura em Celsius(C):"}}
 B --> C[/celsius/]
-C --> D[fahrenheit = celsius * 1.8 + 32]	
+C --> D[fahrenheit = celsius * 1.8 + 32]
 D --> E{{fahrenheit}}
 E --> F([Fim])
 ```
@@ -43,9 +43,9 @@ E --> F([Fim])
 2	DECLARE celsius :INTEIRO
 		fahrenheit
 3   INICIO
-4   ESCREVA Digite a temperatura em celsius(C):
+4   ESCREVA Digite a temperatura em celsius(C):		//solicita a temperatura em celcius
 5 	LEIA celsius
-6 	fahrenheit ← celsius * 1.8 + 32			//calcula fahrenheit
+6 	fahrenheit ← celsius * 1.8 + 32			//calcula a temperatura para transformar em fahrenheit
 7 	ESCREVA fahrenheit
 8 	FIM_CelsiusFahrenheit
 ```
@@ -59,7 +59,7 @@ E --> F([Fim])
 ### 3 - Calculadora
 ```mermaid
 flowchart TD
-A([Inicio]) --> B{{Digite um número:}}
+A([Inicio]) --> B{{Digite o primeiro número:}}
 B --> C[/n1/]
 C --> D{{"Escolha um operador: (+,-,*,/) "}}
 D --> E[/operador/]
@@ -88,20 +88,20 @@ Z --> ZZ([Fim])
 			operador
 			resultado
 3   INICIO
-4   ESCREVA Digite um número:
+4   ESCREVA Digite o primeiro número:							//solicita o primeiro numero
 5	LEIA n1
-6	ESCREVA Escolha um operador: (+,-,*,/)
+6	ESCREVA Escolha um operador: (+,-,*,/)						//solicita o operador
 7 	LEIA operador
-8 	ESCREVA digite o segundo número:
+8 	ESCREVA digite o segundo número:						//solicita o segundo numero
 9 	LEIA n2 
-10 	SE operador === + ENTAO									//verifica o operador para realizar o calculo
-11		resultado = n1 + n2									//calcula a soma
+10 	SE operador === + ENTAO								//verifica o operador para realizar o calculo
+11		resultado = n1 + n2							//calcula a soma
 12		SE SENAO operador === - ENTAO						//verifica o operador para realizar o calculo
-13			resultado = n1 - n2								//calcula a subtração
+13			resultado = n1 - n2						//calcula a subtração
 14				SE SENAO operador === * ENTAO				//verifica o operador para realizar o calculo		
-15					resultado = n1 * n2						//calcula a multiplicação
+15					resultado = n1 * n2				//calcula a multiplicação
 16 						SE SENAO operador === / entao		//verifica o operador para realizar o calculo
-17							resultado = n1 / n2				//calcula a divisão
+17							resultado = n1 / n2		//calcula a divisão
 18	ESCREVA resultado
 19	FIM_CalculadoraSimples
 ```
@@ -116,7 +116,7 @@ Z --> ZZ([Fim])
 ### 4 - Classificar idade
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite a idade:}}
+A([INICIO]) --> B{{Digite a idade:}}			
 B --> C[/idade/]
 C --> D{idade >= 5 or idade <= 7}
 D --TRUE--> E{{Infantil A}}
@@ -141,9 +141,9 @@ M --> Z
 1	ALGORITIMO ClassificarIdade
 2	DECLARE idade
 3   INICIO
-4   ESCREVA Digite a idade:
+4   ESCREVA Digite a idade:							//solicita a idade
 5	LEIA idade
-6	SE idade >= 5 or idade <= 7 ENTAO						//verifica se a idade é maior ou igual a 5 ou menor ou igual a 7
+6	SE idade >= 5 or idade <= 7 ENTAO					//verifica se a idade é maior ou igual a 5 ou menor ou igual a 7
 7 		ESCREVA Infantil A
 8 		SE SENAO idade >= 8 or idade <= 10 ENTAO			//verifica se a idade é maior ou igual a 8 ou menor ou igual a 10
 9 			ESCREVA Infantil B
@@ -151,9 +151,9 @@ M --> Z
 11				ESCREVA Juvenil A
 12				SE SENAO idade >= 14 or idade <= 17 ENTAO	//verifica se a idade é maior ou igual a 14 ou menor ou igual a 17
 13					ESCREVA Juvenil B
-14					SE SENAO idade >= 18 ENTAO				//verifica se a idade é maior ou iguao a 18
+14					SE SENAO idade >= 18 ENTAO		//verifica se a idade é maior ou iguao a 18
 15						ESCREVA Adulto
-16 					SENAO 
+16 					SENAO 					//caso negativo
 17					ESCREVA Inválido 
 18	FIM_ClassificarIdade
 ```
